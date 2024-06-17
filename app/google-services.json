@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "563928006809",
+    "project_id": "fastfood-9e0ec",
+    "storage_bucket": "fastfood-9e0ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563928006809:android:fa5df158d0268293aeb808",
+        "android_client_info": {
+          "package_name": "com.example.greatingcard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpoFFe0Wlf7XzkCbFZ5o21JIGeFuSE2Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

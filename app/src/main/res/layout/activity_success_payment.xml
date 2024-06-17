@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.main.order.checkout.SuccessPaymentActivity">
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Congrats \nYour Order Placed"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:layout_gravity="center|top"
+
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="32dp"
+        app:lottie_rawRes="@raw/payment_success"
+        app:lottie_autoPlay="true"
+        android:foregroundGravity="center"
+        android:layout_gravity="center"
+
+        app:lottie_loop="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/returnHome"
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/rounded_background_shape_go_home"
+        android:text="Go Home"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_gravity="center|bottom"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/returnHome" />
+</FrameLayout>

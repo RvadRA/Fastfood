@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="153dp"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="153dp"
+                    android:layout_height="146dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="1dp">
+
+                        <ImageView
+                            android:id="@+id/productImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/uzbeksoupsilde" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <!-- Other layout components -->
+            <!-- Assuming you want ImageView on the right side here -->
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/productName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Plow"
+                        android:maxLines="1"
+                        android:layout_marginEnd="4dp"
+
+                        android:ellipsize="end"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/removeButton"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_gravity="center_vertical"
+                        app:icon="@drawable/delete_2_svgrepo_com" />
+                   <!-- <ImageView
+                        android:id="@+id/removeButton"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="end"
+                        android:text="Remove" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/productPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="350 ₽"
+                        android:textColor="#FFBF00"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="60dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnMinusQuantity"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="-"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:icon="@drawable/minus_svgrepo_com" />
+                   <!-- <ImageView
+                        android:id="@+id/btnMinusQuantity"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:gravity="start"
+                        android:src="@drawable/remove2"
+                        android:contentDescription="Decrease Quantity"/>-->
+
+                    <TextView
+                        android:id="@+id/productQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnPlusQuantity"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:icon="@drawable/plus_svgrepo_com" />
+                    <!--<ImageView
+                        android:id="@+id/btnPlusQuantity"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:gravity="end"
+                        android:src="@drawable/addnew"
+                        android:contentDescription="Increase Quantity"/>-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- Similarly, modify other sections where necessary -->
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

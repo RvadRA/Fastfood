@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme.Fastfood" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color for app bar -->
+        <item name="colorPrimary">@color/colorPrimery</item>
+        <!-- Darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/yellow</item>
+        <!-- Theme accent color for buttons, text selections, etc. -->
+        <item name="colorAccent">@color/teal_700</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="CustumSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+</resources>

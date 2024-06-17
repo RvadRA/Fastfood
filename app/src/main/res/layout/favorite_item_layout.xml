@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="153dp"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="153dp"
+                    android:layout_height="146dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="1dp">
+
+                    <ImageView
+                        android:id="@+id/favoriteProductImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/burger" />
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <!-- Other layout components -->
+            <!-- Assuming you want ImageView on the right side here -->
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="36dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/favoriteProductName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Plow"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                   <!-- <Button
+                        android:id="@+id/removeFavoriteButton"
+                        android:layout_width="55dp"
+                        android:layout_height="50dp"
+                        android:text="heart"
+                        android:layout_gravity="center_vertical"
+                        app:icon="@drawable/favorite_filled_svgrepo_com" />-->
+                    <ImageView
+                        android:id="@+id/removeFavoriteButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="right"
+                        android:padding="8dp"
+                        app:srcCompat="@drawable/favorite_filled_svgrepo_com" />
+                    <!-- <ImageView
+                         android:id="@+id/removeButton"
+                         android:layout_width="24dp"
+                         android:layout_height="24dp"
+                         android:layout_gravity="end"
+                         android:text="Remove" />-->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/favoriteProductPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="350 ₽"
+                        android:textColor="#FFBF00"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="60dp"
+                    android:gravity="center_vertical|start"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnAddToCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:backgroundTint="@color/purple_500"
+                        android:text="add to cart"
+                        android:textColor="@color/white"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- Similarly, modify other sections where necessary -->
+
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

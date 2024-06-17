@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/btncolar"/>
+    <corners android:radius="50dp"/>
+    <size android:width="220sp"/>
+    <size android:height="60sp"/>
+</shape>

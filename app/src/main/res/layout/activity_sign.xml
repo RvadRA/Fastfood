@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".screen.auth.SignActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="89dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/fast_food"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/purple_500"
+                android:textSize="35sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="590dp"
+                android:layout_margin="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginEnd="40dp"
+                        android:backgroundTint="#D9D9D9"
+                        android:ems="10"
+                        android:fontFamily="@font/inter"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:textColorHint="#D9D9D9"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="40dp"
+                        android:backgroundTint="#D9D9D9"
+                        android:ems="10"
+                        android:fontFamily="@font/inter"
+                        android:hint="@string/enter_email_or_username"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="#D9D9D9"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="40dp"
+                        android:backgroundTint="#D9D9D9"
+                        android:ems="10"
+                        android:fontFamily="@font/inter"
+                        android:hint="@string/password"
+                        android:inputType="text"
+                        android:textColorHint="#D9D9D9"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.526"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="40dp"
+                        android:backgroundTint="#D9D9D9"
+                        android:ems="10"
+                        android:fontFamily="@font/inter"
+                        android:hint="@string/confirm_password"
+                        android:inputType="text"
+                        android:textColorHint="#D9D9D9"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/rounded_login_btn"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:backgroundTint="@color/purple_500"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/loginWithGoogle"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="user_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/google"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/loginWithFacebook"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="user_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/facebook"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.444"
+                        app:layout_constraintStart_toEndOf="@+id/loginWithGithub"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/loginWithGithub"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="20dp"
+                        android:contentDescription="user_image"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/githubimagelogo"
+                        app:layout_constraintStart_toEndOf="@+id/loginWithGoogle"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="220dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="60dp"
+                        app:cardCornerRadius="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/signView"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@color/purple_500"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/sign_up"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            tools:ignore="RtlCompat" />
+
+                        <TextView
+                            android:id="@+id/loginView"
+                            android:layout_width="110dp"
+                            android:layout_height="37dp"
+                            android:background="#FFFFFF"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:padding="5dp"
+                            android:text="@string/log_in"
+                            android:textAlignment="center"
+                            android:textColor="@color/purple_500"
+                            android:textSize="16sp" />
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

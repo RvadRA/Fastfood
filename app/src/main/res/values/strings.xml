@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fast Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fast_food">Fast Food</string>
+    <string name="enter_email_or_username">Enter email</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log in</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="home">Home</string>
+    <string name="open_the_map"><u>Open the map</u></string>
+    <string name="menu">Menu</string>
+    <string name="delete_from_cart">Add to Cart</string>
+    <string name="add_to_cart">Delete Cart</string>
+    <string name="delete_from_favorite">Add to Favorite</string>
+    <string name="add_to_favorite">Delete Favorite</string>
+    <string name="total_price">Total Price: %s</string>
+    <string name="default_web_client_id" translatable="false">YOUR_DEFAULT_WEB_CLIENT_ID_HERE</string>
+
+    <string name="total_price_placeholder">%d ₽</string>
+    <string name="address">Address</string>
+    <string name="edit">Edit</string>
+    <string name="google_maps_api_key">AIzaSyDSnoDFA4SuKsWpM1SSaN-f-PNcIqTunAY</string>
+
+
+</resources>
