@@ -26,9 +26,10 @@
 4. Запустите приложение на эмуляторе или физическом устройстве.
 
 ## Скриншоты
-![Экран входа](path/to/login_screen.png)
-![Главный экран](path/to/home_screen.png)
-![Экран корзины](path/to/cart_screen.png)
+![Главный экран](https://github.com/RvadRA/Fastfood/blob/master/images/home.png)
+![Экран избранные](https://github.com/RvadRA/Fastfood/blob/master/images/favorite.png)
+![Экран корзины](https://github.com/RvadRA/Fastfood/blob/master/images/cart.png)
+![Экран заказы](https://github.com/RvadRA/Fastfood/blob/master/images/check%20out.png)
 
 ## Контрибьютинг
 Мы приветствуем вклад в развитие проекта! Если вы хотите внести свой вклад, пожалуйста, создайте форк репозитория, внесите изменения и отправьте pull request.
